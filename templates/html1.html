@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mahi</title>
+    <style type="text/css">
+	    form{
+	    	background-color: orange;
+	    	height: auto;
+	    }
+	    input{width: 50%;
+		 background-color: lightgray;
+		  height: 30px;}
+
+	</style>
+</head>
+<body bgcolor="#00008b" >
+<form action="./add" method="post">
+    {% csrf_token %}
+	<fieldset><center>
+	<legend>Mini Calculator</legend>
+<br>Enter First Number  :<input type="text" name="n1" placeholder="Enter First Number"><br>
+<br>Enter Second Number :<input type="text" name="n2" placeholder="Enter Second Number">
+<br><br>
+<input style="width: 20%;" class="submit" type="submit" name="op" value="add">
+<input style="width: 20%;" class="submit" type="submit" name="op" value="sub">
+<input style="width: 20%;" class="submit" type="submit" name="op" value="mul">
+<input style="width: 20%;" class="submit" type="submit" name="op" value="div">
+</form></></fieldset>
+</body>
+</html>
